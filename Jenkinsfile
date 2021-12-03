@@ -21,5 +21,11 @@ pipeline {
                 echo "${VERSION}"
             }
         }
+
+        stage('Print') {
+            steps {
+                ls -lrth
+            }
+        }
     }
 }
