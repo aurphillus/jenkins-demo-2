@@ -1,9 +1,9 @@
 pipeline {
+    agent any
     parameters {
         choice(
             name: 'VERSION',
             description: 'Choose the version of the project',
-            defaultValue: '1.0',
             choices: ['1.0', '2.0', '3.0']
         )
     }
