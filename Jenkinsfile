@@ -24,7 +24,7 @@ pipeline {
 
         stage('Print') {
             steps {
-                /bin/sh -c "ls -ltrh"
+                sh "ls -ltrh"
             }
         }
     }
